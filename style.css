@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.maincontainer {
+  background-color: rgb(250, 223, 188);
+  height: 100vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.productcontainer {
+  margin: auto;
+  height: 400px;
+  width: 500px;
+
+  justify-content: center;
+  display: flex;
+  border-radius: 15px;
+  background-color: aliceblue;
+}
+
+.imagecontainer {
+  width: 50%;
+  height: inherit;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 15px 0 0 15px;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  width: auto;
+  height: 100%;
+}
+.product-description {
+  width: 50%;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing {
+  display: flex;
+  text-align: center;
+}
+.price {
+  display: inline-block;
+  padding: 0 15px;
+  margin: auto 0;
+}
+.newprice {
+  font-size: 1.5em;
+  color: rgba(65, 155, 65, 0.897);
+}
+
+.oldprice {
+  text-decoration: line-through;
+}
+h1 {
+  margin: 10px 0;
+  line-height: 1em;
+  font-size: 1.9em;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-size: 0.9em;
+  margin-top: 30px;
+  color: rgb(172, 163, 163);
+}
+p {
+  padding: 20px 0;
+}
+.orderbutton {
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 15px;
+  border-radius: 15px;
+  width: 200px;
+  color: white;
+  background-color: rgba(65, 155, 65, 0.897);
+  cursor: pointer;
+}
+
+.orderbutton:hover {
+  background-color: rgba(0, 124, 0);
+  padding: 12px 0;
+  width: 202px;
+}
+.orderbutton:active {
+  background-color: rgb(101, 134, 93);
+}
+
+@media (max-width: 40em) {
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .productcontainer {
+    margin: auto;
+    height: 750px;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .imagecontainer {
+    width: auto;
+    height: 50%;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+  }
+  .product-description {
+    width: auto;
+    height: 50%;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    border-radius: 0 0 15px 15px;
+  }
+
+  .maincontainer {
+    background-color: rgb(250, 223, 188);
+    height: auto;
+  }
+
+  .orderbutton {
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+
+    border-radius: 15px;
+    width: 150px;
+    color: white;
+    background-color: rgba(65, 155, 65, 0.897);
+    cursor: pointer;
+  }
+
+  .orderbutton:hover {
+    background-color: rgba(0, 124, 0);
+    padding: 12px 0;
+    width: 152px;
+  }
+}
